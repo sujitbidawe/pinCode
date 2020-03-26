@@ -2,8 +2,7 @@
 
 read -p "enter a pin code to validate: " code
 
-#codePattern="^([a-zA-Z0-9]){6}$"
-codePattern="^([0-9]){6}$"
+codePattern="^([1-9]{1}[0-9]{2}[ ]{0,1}[0-9]{3})$"
 if [[ $code =~ $codePattern ]]
 then
 	echo "$code is a valid postal code"
